@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="script.js">  </script>
+
+    <h1>javascript all programmes are here -</h1>
+
+    <p> hey buddy you entered  a game which you can identify your gender  console </p>
+    <pre>
+        let firstName = prompt("enter your name for getting your gender ");
+        if(firstName === "shivam"){
+            console.log("you are definitly a gay");
+         }else if( firstName === "ashwini"){
+            console.log( "teri maak ki ch** bkl");
+        }else{
+            console.log("you are a man");
+        } 
+    </pre>
+    <p>here is the code for indentifying odd or even input"></p>
+    <pre>let num = prompt("enter the number");
+        if(num%2===0){
+            console.log("this no is even");
+        }else{
+            console.log("this is a odd number");
+        }
+    </pre>
+   <p>code for dividing age group</p>
+   <pre>
+    let age = prompt("enter your age");
+    if(60>=age>=18){
+        console.log("you lie in adult category");
+    }else if(age<18){
+        console.log("you lie in junior category");
+    }else if(age>60){
+        console.log("you lie in senior category")
+    }else{
+        console.log("you lie in senior category")
+    }
+    </pre>
+    <p>ternery operator</p>
+    <pre>
+        //ternery oprator tutorials
+        let firstName = prompt('enter your first name buddy ')
+        firstName==="ankit"?console.log("you are only men here"):console.log("you are not seems to be men")
+        
+    </pre>
+    <p>get user to input a number using prompt check the ni is multiple of 5 or not </p>
+    <pre>let userno = prompt("enter a number i will let you know either the no is multiple of 5 or not ");
+
+        if (userno % 5 === 0) {
+            console.log("thsi no is multiple of 5");
+        
+        }else{
+            console.log("this no is not multiple of 5")
+        
+        }
+    </pre>
+    <p>for makind a.p series of sum of no from i to n</p>
+    <pre>let sum = 0;
+        let n = Number(prompt("enter the last no of series"));
+        for (let i= Number(prompt("enter the first no of series")); i<=n; i++){
+            sum = sum + i;
+        }
+        console.log("sum=",sum);
+    </pre>
+    <p>while loop syntax </p>
+    <pre>let i = 1;
+        let sum = 0;
+        while(i<=5){
+            sum = sum+i;
+           
+            i++;
+        } console.log(sum);
+    </pre>
+    <p>do while loop</p>
+    <pre>let i = 1;
+        do{
+            console.log("hello ankit sir ", i);
+            i++
+        }while(i<=10);
+    </pre>
+    <p>sum of all even number from 0 to 100</p>
+    <pre>let sum = 0;
+        for(let i = 0; i <= 100 ; i += 2){
+           sum= sum + i
+        }
+        console.log("sum of all even no form 0 to 100 = ", sum);
+    </pre>
+    <p>shivam ka sacha p</p>
+    <pre>
+        let userno = String (prompt("enter a 'girl' name who is your true love "))
+
+        while(userno!="rashmi"){
+            userno = prompt("you have entered the wrong name try again") 
+        
+        }
+        console.log("congrats chinaar you have entered the correct name ")
+    </pre>
+    <p>for running loop and conditional statement together </p>
+    <pre>let personName = "khushi";
+        let userName = "";
+        
+        while (userName !== personName) {
+            userName = prompt("Guess the name of girl who you like the most:");
+            
+            if (userName === "ankita") {
+                alert("Sudhar ja bkl, maadharjaat.");
+            } else if (userName !== personName) {
+                alert("You have entered the wrong name. Try again!");
+            }
+        }
+        
+        alert("Congrats! You have guessed the right name.");
+        </pre>
+        <pre>
+            let initialInvestment = Number(prompt ("enter your initial (first ) investment value "))
+let increment = Number(prompt("enter the annualy increment on investment percentage value "))
+let induration = Number(prompt("for how many years you are planning to invest"))
+let returnpercent = Number(prompt("interest you are getting annually"))
+
+let totalInvestment = initialInvestment; // To track total investment at the end
+let finalValue = initialInvestment; // To calculate final value with returns
+
+for (let i = 1; i <= induration; i++) {
+    // Add annual increment to investment
+    totalInvestment += totalInvestment * (increment / 100);
+    
+    // Calculate annual return and add to the final value
+    finalValue += finalValue * (returnpercent / 100);
+}
+
+// Display final investment value
+alert(`Your final value after investing is: ${finalValue.toFixed(2)}`);
+
+        </pre>
+
+        <div id="name">Jai shree ram</div>
+        <div id="ani"></div>
+</body>
+
+</html> 
